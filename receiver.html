@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="signup.css">
+  <title>sender</title>
+</head>
+<body>
+  <div class="login-wrapper" id="slider-area">
+      <form action="receiver.php" class="form" method="post">
+      
+          <h2>RECEIVER INFO</h2>
+      
+      <div class="input-group">
+        <input type="text" name="loginname" id="loginname" required>
+        <label for="loginname"> NAME</label>
+      </div>
+     
+      <div class="input-group">
+        <input type="number" name="contact" id="contact" required>
+        <label for="contact">CONTACT</label>
+      </div>
+       <div class="input-group">
+        <input type="text" name="address" id="address" required>
+        <label for="address">ADDRESS</label>
+      </div>
+       <div class="input-group">
+        <input type="text" name="pincode" id="pincode" required>
+        <label for="pincode">PIN CODE</label>
+      </div>
+     
+        <input type ="hidden" name="checkbox" value="delivered">
+        
+    <h2>PAYMENT</h2>
+   
+        Cash On Delivery Only.
+          <input type="submit" value="Confirm" class="submit-btn">
+    </form>
+
+  
+  </div>
+</body>
+</html>

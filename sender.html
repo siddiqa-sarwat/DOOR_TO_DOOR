@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="signup.css">
+  <title>SENDER INFO</title>
+</head>
+<body>
+  <div class="login-wrapper" id="slider-area">
+      <form action="sender.php" class="form" method="post">
+      
+      <h2>SENDER INFO</h2>
+      
+      <div class="input-group">
+        <input type="text" name="loginname" id="loginname" required>
+        <label for="loginname"> NAME</label>
+      </div>
+     <div class="input-group">
+        <input type="number" name="contact" id="contact" required>
+        <label for="contact">CONTACT</label>
+      </div>
+       <div class="input-group">
+        <input type="text" name="address" id="address" required>
+        <label for="address">ADDRESS</label>
+      </div>
+       <div class="input-group">
+        <input type="text" name="pincode" id="pincode" required>
+        <label for="pincode">PIN CODE</label>
+      </div>
+      <h4 style="color: coral">SELECT THE WEIGHT OF THE PACKAGE</h4>
+        <select name="parcel">
+            <option value="">--select--</option>
+               <option value="RS.60">Approx(100gm-500gm)-Rs.60</option>
+               <option value="Rs.80">Approx(501gm-1kg)-Rs.80</option>   
+               <option value="Rs.100">Approx(2kg-4kg)-Rs.100</option> 
+               <option value="Rs.120">Approx(5kg-10kg)-Rs.120</option>
+                 <option value="Rs.150">Approx(11kg-20kg)-Rs.150</option>   
+                 <option value="Rs.170">Approx(21kg-30kg)-Rs.170</option>
+                 <option value="Rs.200">Approx(41kg-50kg)-Rs.200</option>
+                 
+        </select>
+      <br><br><br>
+      <h4 style="color: coral">SELECT THE VEHICLE ACCORDING TO THE PACKAGE</h4>
+      <select name="vehicle">
+            <option value="">--select--</option>
+               <option value="2_wheelers">2_wheelers</option>
+               <option value="4_Wheelers">4_Wheelers</option>  
+                 <option value="Truck">Truck</option> 
+        </select>
+      <br><br>
+     
+        <input type ="hidden" name="id">
+        <input type ="hidden" name="checked" value="collected">
+
+
+        
+           
+      <input type="submit" value="NEXT" class="submit-btn">
+      <p>We believe in you, please fill the Details correctly,or else strict action will be taken,</p>
+  </div>a
+      </form>
+</body>
+</html>

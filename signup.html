@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <!--<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>-->
+    <!--<script src="validate.js" defer></script>-->
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <title>Sign up</title>
+
+    <style>
+        body {
+            background-color: white;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        
+        select {
+            width: 70%;
+            border: 1px, #fff;
+            box-shadow: 1px 1px 2px 1px #fff;
+            border-radius: 5px;
+            padding: 10px 15px 10px 15px;
+        }
+        
+        .form h2 {
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            color: coral;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        
+        .form .input-group {
+            position: relative;
+        }
+        
+        .submit-btn {
+            display: block;
+            margin-left: auto;
+            border: none;
+            outline: none;
+            background: coral;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        .form .input-group input {
+            width: 70%;
+            padding: 10px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background-color: transparent;
+            color: inherit;
+        }
+        
+        .form {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            padding: 40px 50px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: coral;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        p{
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <center>
+
+        <form action="process_signup.php" class="form" method="post" id="signup" novalidate>
+            <h2>SIGN UP</h2>
+
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+
+            <div class="input-group">
+                <label for="password_confirmation">Confirm Password</label>
+                <input type="password" id="password_confirmation" name="password_confirmation">
+            </div>
+
+            <br>
+
+            <button class="submit-btn">Sign Up</button>
+            
+            <p style="color:white;"> ALREADY HAVE AN ACCOUNT?</P> <a href="login.php" >LOG IN</a>
+                                                
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Animated Drop-down Menu CSS3</title>
+      <link rel="stylesheet" href="admindashboard.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <!--<h2> Hello ADMIN</h2></center>-->
+       <!--<img src="admin.jpeg" alt=""/>-->
+   </head>
+   <body>
+       
+       
+<div class="banner-area">
+             
+</div>
+  
+      <nav>
+         <label for="btn" class="button"><i class="fa fa-bars" aria-hidden="true"></i>  MENU
+         <span class="fas fa-caret-down"></span>
+         </label>
+         <input type="checkbox" id="btn" >
+         <ul class="menu">
+             <li>
+               <label for="btn-2" class="first">  <i class="fa fa-users" aria-hidden="true"></i>  Branch Staff
+               <span class="fas fa-caret-down"></span>
+               </label>
+               <input type="checkbox" id="btn-2">
+               <ul>
+                  <li><a href="admin_staffentry.html">Add New</a></li>
+                   <li><a href="admin_stafflist.php">List</a></li>
+               </ul>
+            </li> 
+          
+           
+            <li>
+               <label for="btn-3" class="second"><i class="fa fa-user" aria-hidden="true"></i>  Delivery Boy
+               <span class="fas fa-caret-down"></span>
+               </label>
+               <input type="checkbox" id="btn-3">
+               <ul>
+                  <li><a href="deliveryentry.html">Add New</a></li>
+                  <li><a href="deliverylist.php">List</a></li>
+               </ul>
+            </li>
+           
+             <li>
+               <label for="btn-4" class="first"><i class="fa fa-truck" aria-hidden="true"></i>  Parcels
+               <span class="fas fa-caret-down"></span>
+               </label>
+               <input type="checkbox" id="btn-4">
+               <ul>
+                  <li><a href="senderlist.php">Sender List</a></li>
+                   <li><a href="receiverlist.php"> Receiver List</a></li>
+               </ul>
+            </li> 
+            
+             <li><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i>  Log out</a></li>
+             <!--logout model-->
+             </ul>
+      </nav>
+
+     
+      
+      <script>
+         $('nav .button').click(function(){
+           $('nav .button span').toggleClass("rotate");
+         });
+           $('nav ul li .first').click(function(){
+             $('nav ul li .first span').toggleClass("rotate");
+           });
+           $('nav ul li .second').click(function(){
+             $('nav ul li .second span').toggleClass("rotate");
+           });
+      </script>
+   </body>
+</html>
